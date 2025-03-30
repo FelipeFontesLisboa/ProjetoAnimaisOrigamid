@@ -1,0 +1,58 @@
+.button {
+    display: none;
+}
+.menu {
+    margin: 0 0 32px 0;
+}
+@media (max-width: 700px) {
+    .js .button {
+        display: flex;
+        align-items: center;
+        background: #222;
+        border: none;
+        padding: .5rem 1rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-family:'IBM Plex Mono', monospace;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        margin: 10px;
+        position: relative; /* relativo ao meno que é absoluto */
+        z-index: 3;
+    }
+    /*sonbra pra cima e pra baixo | Icon menu amburger*/
+    .js .button::before {
+        content: '';
+        display: inline-block;
+        margin-right: 4px;
+        height: 2px;
+        width: 12px;
+        background: #fff;
+        box-shadow: 0px 4px #fff, 0 -4px #fff;
+        transition: transform .3s ; /* quero uma transtion de 3segudo para meu tranform rotation*/
+    }
+    .js .button.ativo::before{
+        transform: rotate(90deg) ; /* rodar me  icon em 90grau*/
+    }
+
+    .js .lista { 
+        display: none;
+        position: absolute;
+        background: #fb5;
+        width: 160px;
+        z-index: 2;
+        top:0;
+        padding: 40px 0 20px 0;
+        box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
+    }
+    .js .lista.ativo {
+        display: block;
+        animation: show-top .6s forwards; /* animação ja existente que utilizei no navTab*/
+    }
+    /* .js .dropdown-menu {
+        position: static; /*remvoer a position absoluta e por a posição static original
+        border: none;
+    } */
+ 
+}
