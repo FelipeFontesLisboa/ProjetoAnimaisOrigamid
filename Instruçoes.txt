@@ -1,0 +1,4 @@
+npm install > para subir todos os pacotes
+npm run dev > para gerar nosso arquivo main final
+
+Tem que verificar a questão do babel se o pacote esta instalando junto ou se sera necessário instala-o 
