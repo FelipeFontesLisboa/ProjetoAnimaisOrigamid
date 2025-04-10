@@ -11,9 +11,7 @@ import initHorarioFuncionamento from "./modules/horarioFuncionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 
-const scrollSuave = new ScrollSuave(".js-menu a[href^='#']");
-scrollSuave.init()  //initScrollSuave();
-
+const scrollSuave = new ScrollSuave(".js-menu a[href^='#']"); scrollSuave.init(); //initScrollSuave();
 
 initAnimationScrrol();
 initTabNav();
@@ -31,7 +29,7 @@ initFetchBitcoin();
 // import $ from "jquery"; //teste importação de biblioteca externa com import jquey
 // import _ from "lodash"; // teste importação de biblioteca externa com import lodash
 
-// $("nav").hide(); //teste importação de biblioteca externa com import jquey 
+// $("nav").hide(); //teste importação de biblioteca externa com import jquey
 
 // const diferenca = _.difference(["banana", "uva"], ["uva", "morangos"]); //teste importação de biblioteca externa com import lodash
 // console.log(diferenca);
