@@ -1,4 +1,3 @@
-import initAnimationScrrol from "./modules/scrollAnimacao.js";
 import initTabNav from "./modules/tabNav.js";
 import initScrollSuave from "./modules/scrollSuave.js";
 import initAccordion from "./modules/accordion.js";
@@ -10,8 +9,8 @@ import initNumerosAnimados from "./modules/numeros-animados.js";
 import initHorarioFuncionamento from "./modules/horarioFuncionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
+import initAnimationScrrol from "./modules/scrollAnimacao.js";
 
-initAnimationScrrol();
 initTabNav();
 initScrollSuave();
 initAccordion();
@@ -23,6 +22,7 @@ initNumerosAnimados();
 initHorarioFuncionamento();
 initFetchAnimais();
 initFetchBitcoin();
+initAnimationScrrol();
 
 // //script externo facilmente importado com webpac
 // import $ from "jquery"; //teste importação de biblioteca externa com import jquey
