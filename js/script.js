@@ -1,6 +1,6 @@
 import initTabNav from "./modules/tabNav.js";
 import initScrollSuave from "./modules/scrollSuave.js";
-import initAccordion from "./modules/accordion.js";
+import Accordion from "./modules/accordion.js";
 import initModal from "./modules/modal.js";
 import initToolTip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
@@ -11,9 +11,19 @@ import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 import initAnimationScrrol from "./modules/scrollAnimacao.js";
 
+
+
+
+
+
+
+const accordion = new Accordion("[data-anime='accordion'] dt"); //instancia a classe accordion
+accordion.init(); //inicializa a classe accordion
+
+
 initTabNav();
 initScrollSuave();
-initAccordion();
+//initAccordion();
 initModal();
 initToolTip();
 initDropdownMenu();
