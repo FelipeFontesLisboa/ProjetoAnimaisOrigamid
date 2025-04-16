@@ -1,4 +1,4 @@
-import initTabNav from "./modules/tabNav.js";
+import TabNav from "./modules/tabNav.js";
 import initScrollSuave from "./modules/scrollSuave.js";
 import Accordion from "./modules/accordion.js";
 import initModal from "./modules/modal.js";
@@ -20,8 +20,12 @@ import initAnimationScrrol from "./modules/scrollAnimacao.js";
 const accordion = new Accordion("[data-anime='accordion'] dt"); //instancia a classe accordion
 accordion.init(); //inicializa a classe accordion
 
+const tabNav = new TabNav("[data-tab='menu'] li", "[data-tab='content'] section"); //seletor do conteudo e do menu como argumento
+tabNav.init(); //inicializa a classe TabNav
 
-initTabNav();
+
+
+//initTabNav();
 initScrollSuave();
 //initAccordion();
 initModal();
