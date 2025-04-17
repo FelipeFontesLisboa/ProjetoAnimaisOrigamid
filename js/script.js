@@ -20,7 +20,7 @@ import initAnimationScrrol from "./modules/scrollAnimacao.js";
 const accordion = new Accordion("[data-anime='accordion'] dt"); //instancia a classe accordion
 accordion.init(); //inicializa a classe accordion
 
-const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');//seletor do conteudo e do menu como argumento
+const tabNav = new TabNav('[data-tab="menuImg"] li', '[data-tab="content"] section');//seletor do conteudo e do menu como argumento
 tabNav.init();//inicializa a classe TabNav
 
 
