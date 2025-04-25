@@ -27,6 +27,8 @@ const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-
 modal.init();//inicializa a classe Modal
 
 
+
+
 //initTabNav();
 initScrollSuave();
 //initAccordion();

@@ -40,7 +40,7 @@ export default class Modal {
     if (this.botaoAbrir && this.botaoFechar && this.containerModal) {
       this.addModalEvents();
     }
-    return this;
+    return this;  // retorna o objeto da classe para encadear chamadas
   }
 }
 
