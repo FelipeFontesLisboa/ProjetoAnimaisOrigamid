@@ -23,19 +23,9 @@ export default class Accordion {
       this.toggleAccordion(this.accordionList[0]);
       this.addAccordionEvent();
     }
+   return this; // retorna o objeto da classe para encadear chamadas
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 //?navegação acordion
