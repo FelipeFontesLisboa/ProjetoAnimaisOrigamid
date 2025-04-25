@@ -34,6 +34,7 @@ init() {
       this.tabContent[0].classList.add(this.activeClass); // para sempre inicial um texto ativado o primeiro
       this.addTabNavEvent(); //adiciona o evento de click a cada item do menu
     }
+    return this; // retorna o objeto da classe para encadear chamadas
   }
 }
 
