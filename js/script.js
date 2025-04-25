@@ -2,7 +2,7 @@ import TabNav from "./modules/tabNav.js";
 import initScrollSuave from "./modules/scrollSuave.js";
 import Accordion from "./modules/accordion.js";
 import Modal from "./modules/modal.js";
-import initToolTip from "./modules/tooltip.js";
+import ToolTip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initNumerosAnimados from "./modules/numeros-animados.js";
@@ -26,14 +26,15 @@ tabNav.init();//inicializa a classe TabNav
 const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]'); //seletor do conteudo e do menu como argumento
 modal.init();//inicializa a classe Modal
 
-
+const tooltip = new ToolTip('[data-tooltip]');
+tooltip.init();//inicializa a classe Tooltip
 
 
 //initTabNav();
 initScrollSuave();
 //initAccordion();
 //initModal();
-initToolTip();
+//initToolTip();
 initDropdownMenu();
 initMenuMobile();
 initNumerosAnimados();
